@@ -1,4 +1,4 @@
 from django.urls import path
-from .views import MapsView
+from . import views
 
-urlpatterns = [path("maps", MapsView.as_view())]
+urlpatterns = [path("", views.Home.as_view())]
